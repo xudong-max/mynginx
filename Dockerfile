@@ -1,3 +1,5 @@
 FROM  nginx
 LABEL  owner="test"
-COPY   html/  /usr/share/nginx/html
+COPY   nginx.conf   /etc/nginx/nginx.conf
+COPY   html/  /var/www/html
+
